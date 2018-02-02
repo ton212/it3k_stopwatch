@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="logo-splash" v-bind:style="{ top: $store.state.appTopMargin - 10 + 'px', opacity: $store.state.showSplashScreen ? 1 : 0 }">
+    <div class="logo-splash" v-bind:style="{ top: $store.state.appTopMargin - 100 + 'px', opacity: $store.state.showSplashScreen ? 1 : 0 }">
       <img src="../assets/logo.png" alt="">
     </div>
   </div>
@@ -68,7 +68,7 @@ export default {
     lapInfoCss () {
       return {
         title: {
-          fontSize: this.$store.state.lapInfoDisplayScale - 50 + 'px'
+          fontSize: this.$store.state.lapInfoDisplayScale - 45 + 'px'
         },
         time: {
           fontSize: this.$store.state.lapInfoDisplayScale - 20 + 'px'
@@ -160,6 +160,7 @@ export default {
   font-size: 100px;
   text-align: center;
   margin-bottom: 30px;
+  padding-top: 30px;
 }
 
 .group {
@@ -181,7 +182,7 @@ export default {
 
 .lap {
   width: 30%;
-  background: rgba(255, 255, 255, 0.15);
+  background: #000;
   border-radius: 10px;
   display: inline-block;
   margin-right: 20px;
@@ -204,5 +205,9 @@ export default {
   margin: 0 auto;
   text-align: center;
   transition: all 0.5s;
+}
+
+.logo-splash img {
+  width: 600px;
 }
 </style>
