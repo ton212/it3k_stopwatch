@@ -72,7 +72,7 @@ export default {
     lapInfoCss () {
       return {
         title: {
-          fontSize: this.$store.state.lapInfoDisplayScale - 45 + 'px'
+          fontSize: this.$store.state.lapInfoDisplayScale - 20 + 'px'
         },
         time: {
           fontSize: this.$store.state.lapInfoDisplayScale - 20 + 'px'
@@ -165,7 +165,7 @@ export default {
   transition: all 0.7s;
   font-family: "Sukhumvit Set", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -223,6 +223,6 @@ export default {
 }
 
 .logo-splash img {
-  width: 600px;
+  width: 500px;
 }
 </style>
