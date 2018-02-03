@@ -31,6 +31,10 @@
     <div class="logo-splash" v-bind:style="{ top: $store.state.appTopMargin - 100 + 'px', opacity: $store.state.showSplashScreen ? 1 : 0 }">
       <img src="../assets/logo.png" alt="">
     </div>
+
+    <div class="black-screen" v-bind:style="{ top: $store.state.appTopMargin - 100 + 'px', opacity: $store.state.showBlackScreen ? 1 : 0 }">
+      <h1></h1>
+    </div>
   </div>
     
 </template>
@@ -144,6 +148,17 @@ export default {
 <style scoped>
 .stopwatch {
   transition: all 0.5s;
+}
+
+.black-screen {
+  background: #000000;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  transition: all 0.5s;
+  margin: 0;
+  position: absolute;
+
 }
 
 .title h1 {

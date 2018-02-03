@@ -33,6 +33,8 @@
 
     <button :disabled="$store.state.showSplashScreen" @click="$store.commit('toggleSplashScreen')">Show Splash Screen</button>
     <button :disabled="!$store.state.showSplashScreen" @click="$store.commit('toggleSplashScreen')">Hide Splash Screen</button>
+    <button :disabled="$store.state.showBlackScreen" @click="$store.commit('toggleBlackScreen')">Show Black Screen</button>
+    <button :disabled="!$store.state.showBlackScreen" @click="$store.commit('toggleBlackScreen')">Hide Black Screen</button>
 
     <br><br><hr><br>
 

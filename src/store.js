@@ -7,6 +7,7 @@ Vue.use(Vuex)
 
 const state = {
   showSplashScreen: false,
+  showBlackScreen: false,
   appTopMargin: 100,
   stopwatchTitle: 'ทดสอบ',
   stopwatchTitleDisplay: true,
@@ -21,6 +22,9 @@ const state = {
 }
 
 const mutations = {
+  toggleBlackScreen (state) {
+    state.showBlackScreen = !state.showBlackScreen
+  },
   toggleSplashScreen (state) {
     state.showSplashScreen = !state.showSplashScreen
   },
@@ -78,7 +82,7 @@ export default new Vuex.Store({
   plugins: [
     createPersistedState(),
     createMutationsSharer({ predicate: [
-      'setAppTopMargin', 'toggleSplashScreen',
+      'setAppTopMargin', 'toggleSplashScreen', 'toggleBlackScreen',
       'setStopwatchTitle', 'toggleStopwatchTitle', 'setTimeDisplayFontSize', 'setTimeSeperatorOffset', 'setTimeDisplayWidth',
       'toggleStopwatch', 'resetStopwatch',
       'requestLapSave', 'saveNewLap', 'clearLaps', 'setLapInfoDisplayScale'
