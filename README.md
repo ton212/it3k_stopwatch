@@ -1,6 +1,6 @@
 # IT3Kings 15th Stopwatch
 
-A stopwatch for IT3Kings 15th which helded by King's Mongkut Institution or Technology Ladkrabang.
+A stopwatch for IT3Kings 15th which helded by King's Mongkut Institution of Technology Ladkrabang.
 
 The program is consists of two parts, a display and a controller. Those two needed to be run on the same machine, ideal for two screens setup machine (one for display and one for controller).
 
